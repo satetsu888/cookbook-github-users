@@ -21,7 +21,7 @@ Attributes
     <td><tt>['github-users']['accounts']</tt></td>
     <td>Array</td>
     <td>github account names</td>
-    <td>satetsu888</td>
+    <td> - </td>
   </tr>
 </table>
 
@@ -48,7 +48,7 @@ and Add your account name of github.
 Contributing
 ------------
 
-1. Fork the repository on Github
+1. Fork the repository on Github (https://github.com/satetsu888/cookbook-github-users)
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
 4. Write tests for your change (if applicable)

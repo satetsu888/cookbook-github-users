@@ -37,8 +37,15 @@ accounts.each do |account|
     execute 'clone and copy dotfiles repo' do
         command <<-EOC
             git clone https://github.com/#{account}/#{dotfiles_repository}.git #{tmp_dir}
-            git ls-files | xargs -ISTR cp ./#{tmp_dir}/FILE /home/#{account}/
+            cd #{tmp_dir}
+            git ls-files | xargs -IFILE cp ./FILE /home/#{account}/
+            cd
         EOC
+    end
+
+    user account do
+        shell  "/bin/zsh"
+        only_if do File.exist?("#{tmp_dir}/.zshrc") end
     end
 
     execute 'clean tmp_dir' do

@@ -1,10 +1,12 @@
 github-users Cookbook
 =====================
 This cookbook makes easy to create users, who using ssh-public-keys on github.
+And this cookbook also download and setup users "dotfiles" repo from github.
 
 Requirements
 ------------
-maybe nothing
+git
+openssl
 
 Attributes
 ----------

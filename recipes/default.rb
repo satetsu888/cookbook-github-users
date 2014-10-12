@@ -17,8 +17,8 @@ accounts.each do |account|
     end
 
     directory "/home/#{account}/.ssh" do
-        owner "#{account}"
-        group "#{account}"
+        owner account
+        group account
         mode '0700'
         action :create
     end

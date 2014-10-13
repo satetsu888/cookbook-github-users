@@ -38,7 +38,7 @@ accounts.each do |account|
         command <<-EOC
             git clone https://github.com/#{account}/#{dotfiles_repository}.git #{tmp_dir}
             cd #{tmp_dir}
-            git ls-files | xargs -IFILE cp ./FILE /home/#{account}/
+            ls -A | xargs -IFILE mv ./FILE /home/#{account}/
             cd
         EOC
     end

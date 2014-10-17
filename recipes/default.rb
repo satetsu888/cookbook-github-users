@@ -13,6 +13,7 @@ tmp_dir = node['github-users']['dotfiles_temporary_dir']
 
 accounts.each do |account|
     user account do
+        supports :manage_home => true
         home     "/home/#{account}"
     end
 

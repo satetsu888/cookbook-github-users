@@ -4,5 +4,4 @@ gemfile:
 rvm:
  - 1.9.3
 script:
- - kitchen converge 
- - bundle exec rake rspec
+ - kitchen test

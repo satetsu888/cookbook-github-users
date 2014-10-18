@@ -4,4 +4,4 @@ gemfile:
 rvm:
  - 1.9.3
 script:
- - bundle exec kitchen test
+ - knife cookbook test github-uesrs -o .

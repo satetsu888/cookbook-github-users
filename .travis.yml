@@ -4,4 +4,4 @@ gemfile:
 rvm:
  - 1.9.3
 script:
- - kitchen test
+ - bundle exec kitchen test

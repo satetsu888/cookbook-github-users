@@ -4,4 +4,4 @@ gemfile:
 rvm:
  - 1.9.3
 script:
- - bundle exec knife cookbook test -a -c knife.rb -o ../
+ - bundle exec knife cookbook test -a -c knife.rb

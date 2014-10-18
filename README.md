@@ -6,6 +6,7 @@ And this cookbook also download and setup users "dotfiles" repo from github.
 Requirements
 ------------
 git
+
 openssl
 
 Attributes
